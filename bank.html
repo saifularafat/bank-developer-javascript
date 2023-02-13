@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bankColor: '#d40a25',
+                symbol: '#740615',
+              },
+            },
+          },
+        };
+      </script>
+</head>
+<body>
+    <header class="text-center mt-8">
+        
+    </header> 
+    <main class=" bg-green-200 pb-8">
+        <section class="mt-8">
+            <h1 class="text-3xl font-semibold text-black font-sans text-center pb-7 pt-5">Let'Go Some 
+                <span class="text-bankColor font-bold">MooooooooooneY</span> <span class="text-bankColor">!.</span></h1>
+            <div class="grid grid-cols-3 gap-5 w-4/5 mx-auto pb-12">
+                <div class="bg-green-500 p-8 rounded-xl text-white">
+                    <h2 class="text-2xl space-x-4 font-medium pb-2">Dposit</h2>
+                    <h2 class="text-5xl" >$<span id="deposit-balance">00</span></h2>
+                </div>
+                <div class="bg-rose-400 p-8 rounded-xl text-white">
+                    <h2 class="text-2xl space-x-4 font-medium pb-2">Withdrew</h2>
+                    <h2 class="text-5xl">$<span id="withdrew-balance">00</span> </h2>
+                </div>
+                <div class="bg-orange-400 p-8  rounded-xl text-white">
+                    <h2 class="text-2xl space-x-4 font-medium pb-2">Balance</h2>
+                    <h2 class="text-5xl">$<span id="current-balance">500</span> </h2>
+                </div>
+            </div>
+        </section>
+            
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-5 w-4/5 mx-auto pb-12 text-white">
+                <div class="bg-blue-400 p-8 rounded-lg">
+                    <h2 class="text-2xl pb-4 font-semibold">Please Deposit</h2>
+                    <input class="w-10/12 rounded-md text-lg px-4 py-2 text-slate-500 "  id="deposit-field" type="text" placeholder="$ amunt you want to deposit"> <br>
+                    <button class="bg-blue-700 font-medium mt-3 px-8 py-1 rounded-lg hover:bg-amber-600 transition-all" id="btn-deposit">Deposit</button>
+                </div>
+                <div class="bg-indigo-400 p-8 rounded-lg">
+                    <h2 class="text-2xl pb-4 font-semibold">Please Withdrew</h2>
+                    <input class="w-10/12 rounded-md text-lg  px-4 py-2 text-slate-500"  id="withdrew-field" type="text" placeholder="$ amunt you want to withdrew"> <br>
+                    <button class="bg-indigo-700 font-medium mt-3 px-8 py-1 rounded-lg hover:bg-amber-600 transition-all" id="btn-withdrew">Withdrew</button>
+                </div>
+            </div> 
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdrew.js"></script>
+</body>
+</html>

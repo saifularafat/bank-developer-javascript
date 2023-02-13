@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bankColor: '#d40a25',
+                symbol: '#740615',
+              },
+            },
+          },
+        };
+      </script>
+</head>
+<body>
+    <header class="text-center mt-8">
+        <h1 class="text-3xl font-semibold text-black font-sans">Welcome to your 
+            <span class="text-bankColor font-bold">Baap Er Bank</span> <span class="text-bankColor">!!!</span></h1>
+    </header>   
+    <main class="mt-10">
+        <div class="bg-orange-300 w-3/4 mx-auto p-5 rounded-xl">
+            <h3 class="text-2xl pb-4 font-semibold text-slate-800">Please Login</h3>
+            <input class="px-4 py-2 w-3/4 mb-3 rounded-lg space-x-2 border-cyan-50" name="" type="email" id="user-email" placeholder="your email">
+            <input class="px-4 py-2 w-3/4 mb-3 rounded-lg space-x-2 border-none" type="password" name="" id="user-password" placeholder="password"> <br>
+            <button id="btn-submit" class="bg-red-700 text-white text-base font-semibold rounded-lg px-8 py-2 hover:bg-green-800 transition-all">Submit</button>
+        </div>
+    </main> 
+    <script src="js/tailwind.config.js"></script>
+    <script src="js/bankProject.js"></script>
+</body>
+</html>
